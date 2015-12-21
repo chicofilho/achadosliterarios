@@ -71,14 +71,19 @@
 
     <!-- Page Header -->
     <!-- Set your background image for this header on the line below. -->
-    <header class="intro-header" style="background-image: url('img/pedra-equilibrionew_img6.png')">
+    <header id="header_master" class="intro-header" style="">
+        <script type="text/javascript">
+            element = document.getElementById('header_master')
+            var img_number = Math.floor((Math.random() * 13) + 1);
+            element.style.backgroundImage = "url('img/e"+img_number+".png')"
+        </script>
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <div class="site-heading">
                         <h1>Achados Literários</h1>
                         <hr class="small">
-                        <span class="subheading">Conheça escritores independentes</span>
+                        <span class="subheading">Conheça escritores independentes de destaque</span>
                     </div>
                 </div>
             </div>
